@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterapps/services/navigation_service.dart';
 import 'package:flutterapps/services/dialog_service.dart';
 import 'package:flutterapps/ui/views/login_view.dart';
+import 'package:flutterapps/ui/views/startup_view.dart';
 import 'managers/dialog_manager.dart';
 import 'ui/router.dart';
 import 'locator.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Open Sans',
             ),
       ),
-      home: LoginView(),
+      home: StartUpView(),
       onGenerateRoute: generateRoute,
     );
   }

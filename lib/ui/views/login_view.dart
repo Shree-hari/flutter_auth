@@ -5,6 +5,7 @@ import 'package:flutterapps/ui/widgets/text_link.dart';
 import 'package:flutter/material.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 import 'package:flutterapps/viewmodels/login_view_model.dart';
+import 'package:flutterapps/services/navigation_service.dart';
 
 class LoginView extends StatelessWidget {
   final emailController = TextEditingController();
@@ -57,6 +58,7 @@ class LoginView extends StatelessWidget {
                   'Create an Account if you\'re new.',
                   onPressed: () {
                     // TODO: Handle navigation
+                    model.navigateToSignUp();
                   },
                 )
               ],
@@ -64,4 +66,7 @@ class LoginView extends StatelessWidget {
           )),
     );
   }
+
+
+
 }
